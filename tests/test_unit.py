@@ -1,3 +1,4 @@
+
 import unittest
 from app import app
 
@@ -11,6 +12,7 @@ class TestFlaskApp(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertIn(b'Hello, World!', result.data)
 
+# Made a small change
 if __name__ == '__main__':
     unittest.main()
 
